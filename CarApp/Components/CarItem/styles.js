@@ -30,6 +30,11 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#BEBEBE'
     },
+    buttoncontainer: {
+      position: 'absolute',
+      bottom: 50,
+      width: '100%'
+    }
     
   });
   

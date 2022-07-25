@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, ImageBackground } from 'react-native';
+import StyledButton from "../StyledButton";
 import styles from './styles';
 
 
@@ -21,6 +22,25 @@ const CarItem = (props) => {
                     Price
                 </Text>
             </View> 
+            
+            <View style={styles.buttoncontainer}>
+                <StyledButton
+                content = "MORE INFO"
+                onPress = {
+                    () => {
+                        console.warn("you will get more info")
+                    }
+                }
+                />
+                <StyledButton
+                content = "REGISTER NOW"
+                onPress = {
+                    () => {
+                        console.warn("you are now registered")
+                    }
+                }
+                />
+            </View>
         </View>
     </View>
   );
