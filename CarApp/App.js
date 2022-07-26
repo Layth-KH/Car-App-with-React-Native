@@ -5,7 +5,11 @@ import CarItem from './Components/CarItem'
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem/>
+      <CarItem
+      name= {"Jeep"}
+      price= {"19,000$"}
+      image= {require('./assets/image5.jpg')}
+      />
       <StatusBar style="auto" />
     </View>
   );

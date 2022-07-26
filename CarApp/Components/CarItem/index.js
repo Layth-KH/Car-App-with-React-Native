@@ -5,26 +5,32 @@ import styles from './styles';
 
 
 const CarItem = (props) => {
+
+    const name=props.name
+    const price=props.price
+    const image=props.image
+
   return (
     <View style={styles.container}>
         <View style={styles.carcontainer}>
 
             <ImageBackground
             style={styles.image}
-            source={require('../../assets/image5.jpg')}
+            source={image}
             />
 
             <View style={styles.titels}>    
                 <Text style={styles.titel}>
-                    Jeep
+                    {name}
                 </Text>
                 <Text style={styles.subtitel}>
-                    Price
+                    {price}
                 </Text>
             </View> 
             
             <View style={styles.buttoncontainer}>
                 <StyledButton
+                type = 'primary'
                 content = "MORE INFO"
                 onPress = {
                     () => {
@@ -33,6 +39,7 @@ const CarItem = (props) => {
                 }
                 />
                 <StyledButton
+                type = 'secondary'
                 content = "REGISTER NOW"
                 onPress = {
                     () => {
